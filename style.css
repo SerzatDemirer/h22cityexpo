@@ -6,8 +6,9 @@ body{
     background-image: url('./images/H22_City_Expo_Desktop.jpeg');
     background-size: contain; 
     background-repeat: no-repeat;
-    width: 100%; 
     height: 881px;
+    width: 100%;
+    
 }
 
 .logo-h22 {
@@ -47,7 +48,7 @@ body {
     position: fixed;
     z-index: 1;
     top: 0;
-    left: 0;
+    right: 0;
     background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
@@ -75,6 +76,83 @@ body {
     margin-left: 50px;
 }
 
+.bottomline {
+    border-bottom-width: 2px;
+    border-bottom-color: #f1f1f1;
+    width: 80%;
+    margin-left: 10%;
+    border-bottom-style: double;
+}
+
+.sidenav {
+    color: white;
+    background-color: #a61380;
+    padding-top: 15px;
+}
+
+.sidenav a {
+    color: white;
+    font-size: 24px;
+}
+
+.slide-show {
+    background-color: burlywood;
+    height: 500px;
+    width: 100%;
+}
+
+.events-slide-show {
+    background-color: deepskyblue;
+    height: 600px;
+    width: 100%;
+}
+
+.region-box-picture {
+    height: 600px;
+    width: 100%;
+    background-color: crimson;
+}
+
+.meny-buton {
+    
+    margin-right: 50px;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-bar {
+    padding: 20px 0px;
+    color: white;
+    background-color: #a61380;
+    height: 90px;
+    display: flex;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-container {
+    width: var(--chakra-sizes-full);
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    max-width: var(--chakra-sizes-8xl);
+    padding-inline-start: 1rem;
+    padding-inline-end: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-container button{
+    margin-left: 100px;
+    background-color: #a61380;
+    color: #f1f1f1;
+}
+
+
+
 @media screen and (max-height: 450px) {
     .sidenav {
         padding-top: 15px;
@@ -83,4 +161,29 @@ body {
     .sidenav a {
         font-size: 18px;
     }
+
+    .slide-show {
+        background-color: burlywood;
+        height: 500px;
+        width: 100%;
+    }
+
+    .events-slide-show {
+        background-color: deepskyblue;
+        height: 600px;
+        width: 100%;
+    }
+
+    .region-box-picture {
+        height: 600px;
+        width: 100%;
+        background-color: crimson;
+    }
+
+    .meny-buton {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+
 }
