@@ -17,6 +17,7 @@
 
 
         <div class="expo-bg-image">
+            <img src='./images/H22_City_Expo_Desktop.jpeg' />
             <div class="meny-buton">
 
                 <div id="mySidenav" class="sidenav">
@@ -34,21 +35,21 @@
                 </div>
 
 
+                <div class="menu-button-box" onclick="openNav()">
+                    <span style="font-size: 15px;
+    cursor: pointer;
+    height: 25px;">MENU</span>
+                    <span style="font-size: 20px;
+                    cursor: pointer;
+                    max-height: 33px;
+                    margin-left: 10px;"> &#9776;</span>
+                </div>
 
-                <span style="font-size:30px;cursor:pointer" onclick="openNav()"> MENY &#9776;</span>
 
-                <script>
-                    function openNav() {
-                        document.getElementById("mySidenav").style.width = "350px";
-                    }
 
-                    function closeNav() {
-                        document.getElementById("mySidenav").style.width = "0";
-                    }
-                </script>
             </div>
 
-            <div class="logo-h22">
+            <div class=" logo-h22">
                 <img alt="h22 logo" src="images/H22_Logo_Neg.svg" loading="eager" class="chakra-image css-1yly0ie"
                     priority="true" layout="fill" width="100px">
             </div>
@@ -67,81 +68,118 @@
             </div>
 
 
-            <nav class="nav-bar">
-                <div class="nav-container">
-                    <button class="nav-language">
-                        <svg id="Flag_icon_svg__Capa_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
-                            viewBox="0 0 512 341.4" xml:space="preserve" focusable="false"
-                            class="chakra-icon css-gcxqap">
-                            <style>
-                                .Flag_icon_svg__st0 {
-                                    fill: #1d1d1b
-                                }
-                            </style>
-                            <path class="Flag_icon_svg__st0"
-                                d="M192 0h320v138.7H192zM512 341.4V202.7H192v138.6M128 341.3V202.7H0v138.7M0 0h128v138.7H0z">
-                            </path>
-                        </svg>
-                        <p class="nav-button-text">LANGUAGE</p>
-                    </button>
-                    <button class="nav-program">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false"
-                            class="chakra-icon css-17xeanu">
-                            <path
-                                d="M19 2h-1V1a1 1 0 00-2 0v1H8V1a1 1 0 00-2 0v1H5a5.006 5.006 0 00-5 5v12a5.006 5.006 0 005 5h14a5.006 5.006 0 005-5V7a5.006 5.006 0 00-5-5zM2 7a3 3 0 013-3h14a3 3 0 013 3v1H2zm17 15H5a3 3 0 01-3-3v-9h20v9a3 3 0 01-3 3z">
-                            </path>
-                            <circle cx="12" cy="15" r="1.5"></circle>
-                            <circle cx="7" cy="15" r="1.5"></circle>
-                            <circle cx="17" cy="15" r="1.5"></circle>
-                        </svg>
-                        <p class="nav-button-text">PROGRAM</p>
-                    </button>
-                    <button class="nav-mitt-h22">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false"
-                            class="chakra-icon css-17xeanu">
-                            <path
-                                d="M17.5.917a6.4 6.4 0 00-5.5 3.3 6.4 6.4 0 00-5.5-3.3A6.8 6.8 0 000 7.967c0 6.775 10.956 14.6 11.422 14.932l.578.409.578-.409C13.044 22.569 24 14.742 24 7.967a6.8 6.8 0 00-6.5-7.05zM12 20.846c-3.253-2.43-10-8.4-10-12.879a4.8 4.8 0 014.5-5.05 4.8 4.8 0 014.5 5.05h2a4.8 4.8 0 014.5-5.05 4.8 4.8 0 014.5 5.05c0 4.481-6.747 10.449-10 12.879z"
-                                data-name="01 align center"></path>
-                        </svg>
-                        <p class="nav-button-text">MY H22</p>
-                    </button>
-                    <button class="nav-sök">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false"
-                            class="chakra-icon css-17xeanu">
-                            <path
-                                d="M23.707 22.293l-5.969-5.969a10.016 10.016 0 10-1.414 1.414l5.969 5.969a1 1 0 001.414-1.414zM10 18a8 8 0 118-8 8.009 8.009 0 01-8 8z">
-                            </path>
-                        </svg>
-                        <p class="nav-button-text">Sök</p>
 
-                    </button>
-                    <button class="nav-info">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false"
-                            class="chakra-icon css-17xeanu">
-                            <path
-                                d="M12 0a12 12 0 1012 12A12.013 12.013 0 0012 0zm0 22a10 10 0 1110-10 10.011 10.011 0 01-10 10z">
-                            </path>
-                            <path d="M12 10h-1a1 1 0 000 2h1v6a1 1 0 002 0v-6a2 2 0 00-2-2z"></path>
-                            <circle cx="12" cy="6.5" r="1.5"></circle>
-                        </svg>
-                        <p class="nav-button-text">INFO</p>
-                    </button>
+        </div>
+        <nav class="nav-bar">
+            <div class="nav-container">
+                <button class="nav-language">
+                    <svg id="Flag_icon_svg__Capa_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
+                        viewBox="0 0 512 341.4" xml:space="preserve" focusable="false" class="chakra-icon css-gcxqap">
+                        <style>
+                            .Flag_icon_svg__st0 {
+                                fill: #fff
+                            }
+                        </style>
+                        <path class="Flag_icon_svg__st0"
+                            d="M192 0h320v138.7H192zM512 341.4V202.7H192v138.6M128 341.3V202.7H0v138.7M0 0h128v138.7H0z">
+                        </path>
+                    </svg>
+                    <p class="nav-button-text">LANGUAGE</p>
+                </button>
+                <button class="nav-program">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false"
+                        class="chakra-icon css-17xeanu">
+                        <path fill="#fff"
+                            d="M19 2h-1V1a1 1 0 00-2 0v1H8V1a1 1 0 00-2 0v1H5a5.006 5.006 0 00-5 5v12a5.006 5.006 0 005 5h14a5.006 5.006 0 005-5V7a5.006 5.006 0 00-5-5zM2 7a3 3 0 013-3h14a3 3 0 013 3v1H2zm17 15H5a3 3 0 01-3-3v-9h20v9a3 3 0 01-3 3z">
+                        </path>
+                        <circle fill="#fff" cx="12" cy="15" r="1.5"></circle>
+                        <circle fill="#fff" cx="7" cy="15" r="1.5"></circle>
+                        <circle fill="#fff" cx="17" cy="15" r="1.5"></circle>
+                    </svg>
+                    <p class="nav-button-text">PROGRAM</p>
+                </button>
+                <button class="nav-mitt-h22">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false"
+                        class="chakra-icon css-17xeanu">
+                        <path fill="#fff"
+                            d="M17.5.917a6.4 6.4 0 00-5.5 3.3 6.4 6.4 0 00-5.5-3.3A6.8 6.8 0 000 7.967c0 6.775 10.956 14.6 11.422 14.932l.578.409.578-.409C13.044 22.569 24 14.742 24 7.967a6.8 6.8 0 00-6.5-7.05zM12 20.846c-3.253-2.43-10-8.4-10-12.879a4.8 4.8 0 014.5-5.05 4.8 4.8 0 014.5 5.05h2a4.8 4.8 0 014.5-5.05 4.8 4.8 0 014.5 5.05c0 4.481-6.747 10.449-10 12.879z"
+                            data-name="01 align center"></path>
+                    </svg>
+                    <p class="nav-button-text">MY H22</p>
+                </button>
+                <button class="nav-sök">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false"
+                        class="chakra-icon css-17xeanu">
+                        <path fill="#fff"
+                            d="M23.707 22.293l-5.969-5.969a10.016 10.016 0 10-1.414 1.414l5.969 5.969a1 1 0 001.414-1.414zM10 18a8 8 0 118-8 8.009 8.009 0 01-8 8z">
+                        </path>
+                    </svg>
+                    <p class="nav-button-text">SEARCH</p>
+
+                </button>
+                <button class="nav-info">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false"
+                        class="chakra-icon css-17xeanu">
+                        <path fill="#fff"
+                            d="M12 0a12 12 0 1012 12A12.013 12.013 0 0012 0zm0 22a10 10 0 1110-10 10.011 10.011 0 01-10 10z">
+                        </path>
+                        <path fill="#fff" d="M12 10h-1a1 1 0 000 2h1v6a1 1 0 002 0v-6a2 2 0 00-2-2z"></path>
+                        <circle fill="#fff" cx="12" cy="6.5" r="1.5"></circle>
+                    </svg>
+                    <p class="nav-button-text">INFO</p>
+                </button>
 
 
-                </div>
-            </nav>
+            </div>
+        </nav>
+    </div>
+    <div class="content-of-page">
+        <p class="content-text">The content of the page is continuously updated until H22 City Expo</p>
+    </div>
+
+
+    <div class="hbg-1">
+        <img src="./images/6d4b8127-93b5-4322-9e42-eb742286d04b.jpeg" alt="" width="50%" class="img1">
+        <img src="./images/H22-presentation.jpeg" alt="" width="50%" class="img2">
+    </div>
+
+    <div class="hbg-2">
+        <img src="./images/norrahamnen.jpeg" alt="" width="40%" class="img3">
+        <img src="./images/nqo4iej6a6hehbgfp2fc.jpeg" alt="" width="60%" class="img4">
+    </div>
+
+    <div class="hbg-3">
+        <img src="./images/microsoftteams-image-15-1024x512.jpeg" alt="" width="60%" class="img5">
+        <img src="./images/H22_Oppertunities.png" alt="" width="40%" class="img6">
+    </div>
+
+    <div class="footer">
+        <div class="follow-us">
+            <p>FOLLOW US</p>
+            <div>
+                <img src="./images/facebook-icons-transparent-1.png" alt="" width="30px">
+                <img src="./images/Tiktok-logo-3d-icon-rendering-isolated-Premium-vector-PNG.png" alt="" width="30px">
+                <img src="./images/instagram-icon-with-text-logo-png.png" alt="" width="30px">
+            </div>
+        </div>
+        <div class="footer_images">
+            <img src="./images/hbg_22_alternative.png" alt="" width="160px">
+            <img src="./images/logo_helsingborg-stad.png" alt="" width="80px">
         </div>
     </div>
-    <div class="region-box-pictures">
 
-    </div>
-    <div class="slide-show">
 
-    </div>
-    <div class="events-slide-show">
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "350px";
+        }
 
-    </div>
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
 
 </body>
+
 
 </html>

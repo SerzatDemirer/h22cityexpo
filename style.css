@@ -3,12 +3,14 @@ body{
 }
 
 .expo-bg-image {
-    background-image: url('./images/H22_City_Expo_Desktop.jpeg');
-    background-size: contain; 
-    background-repeat: no-repeat;
-    height: 881px;
-    width: 100%;
+    position: relative;
+    height: 795px;
     
+}
+.expo-bg-image>img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
 }
 
 .logo-h22 {
@@ -20,17 +22,16 @@ body{
 .main-heading {
     color: white;
     position: absolute;
-    top: 250px;
+    top: 200px;
     left: 50px;
 }
 
 .main-heading-h1 {   
-    font-size: 88px;
-    margin-bottom: -40px;   
-}
+    font-size: 82px;
+ }
 
 .main-date {
-    font-size: 52px; 
+    font-size: 45px; 
 }
 
 .main-city {
@@ -107,14 +108,25 @@ body {
     width: 100%;
 }
 
-.region-box-picture {
-    height: 600px;
+.content-of-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #f1f1f1;
+    background-color: #0095db;
+    height: 100px;
     width: 100%;
-    background-color: crimson;
+    
 }
 
-.meny-buton {
     
+
+
+.meny-buton {
+    position: absolute;
+    top: 50px;
+    right: 30px; 
     margin-right: 50px;
     color: white;
     display: flex;
@@ -124,7 +136,7 @@ body {
 .nav-bar {
     padding: 20px 0px;
     color: white;
-    background-color: #a61380;
+    background-color: #902682;
     height: 50px;
     display: flex;
     position: fixed;
@@ -135,26 +147,80 @@ body {
 }
 
 .nav-container {
-    width: var(--chakra-sizes-full);
-    margin-inline-start: auto;
-    margin-inline-end: auto;
-    max-width: var(--chakra-sizes-8xl);
     padding-inline-start: 1rem;
     padding-inline-end: 1rem;
     display: flex;
     justify-content: space-around;
+    width: 100%;
 }
 
-.nav-container button{
-    width: 40px;
+.nav-container button {
     border: none;
-    margin-left: 120px;
-    background-color: #a61380;
+    background-color: #f102d100;
     color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 62px;
+}
+.nav-button-text{
+    font-size: 12;
+    font-weight: bold;
+}
+.hbg-1 {
+    display: flex;
+    flex-direction: row;
 }
 
+.hbg-2 {
+    display: flex;
+    flex-direction: row;
+}
 
+.hbg-3 {
+    display: flex;
+    flex-direction: row;
+} 
 
+.footer {
+    height: 350px;
+    background-color: #f1efed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 60px;
+}
+
+.follow-us{
+    margin-left: 41px;
+}
+
+.menu-button-box{
+    background-color: white;
+    color: black;
+    align-items: baseline;
+    display: flex;
+    flex-direction: row;
+    border-radius: 29px;
+    width: 149px;
+    justify-content: center;
+    padding: 10px 0px;
+    box-shadow: 0px 1px 5px 1px #0000003d;
+    cursor: pointer;
+}
+
+.menu-button-box:hover{
+    background-color: #d1e4ed;
+}
+
+.footer_images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 20px;
+    
+}
+/*  write new codes above!     */
 
 
 @media screen and (max-height: 450px) {
@@ -188,6 +254,15 @@ body {
         display: flex;
         justify-content: flex-end;
     }
+  
 
 
+}
+
+
+@media screen and (min-width: 830px) {
+    .nav-container{
+        margin: 0px 35vh;
+    
+    }
 }
