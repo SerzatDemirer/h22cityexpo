@@ -78,6 +78,7 @@ body {
 }
 
 .bottomline {
+    margin-top: 50px;
     border-bottom-width: 2px;
     border-bottom-color: #f1f1f1;
     width: 80%;
@@ -167,6 +168,30 @@ body {
     font-size: 12;
     font-weight: bold;
 }
+
+.nav-language {
+    cursor: pointer;
+}
+
+.nav-program {
+    cursor: pointer;
+}
+
+.nav-mitt-h22 {
+    cursor: pointer;
+}
+
+.nav-sök {
+    cursor: pointer;
+}
+
+.nav-info {
+    cursor: pointer;
+}
+
+
+}
+
 .hbg-1 {
     display: flex;
     flex-direction: row;
@@ -220,6 +245,13 @@ body {
     margin: 0px 20px;
     
 }
+
+
+
+
+
+
+
 /*  write new codes above!     */
 
 
